@@ -10,8 +10,15 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-virtualenv \
     python3-wheel \
+    gcc \
+    build-essential \
+    libglib2.0-dev \
+    bluez \
+    libboost-python-dev
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
+
+RUN install bluepy
 
 # Define working directory
 WORKDIR /data
