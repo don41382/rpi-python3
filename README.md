@@ -1,4 +1,4 @@
-# rpi-python3
+# rpi-python3 with bluetooth & bluepy running
 
 Raspberry Pi compatible Docker base image with Python 3 preinstalled.
 
